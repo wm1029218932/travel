@@ -12,29 +12,29 @@ export default {
 </script>
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'; // @表示src目录，在css中使用@前面需要加~线
-	.header
-		display: flex
-		line-height: 0.86rem
-		background: $bgColor
-		color: #fff
-		.header-left
-			width: 0.64rem
-			float: left
-			.back-icon
-				text-align: center
-		.header-input
-			flex: 1
-			height: 0.64rem
-			line-height: 0.64rem
-			margin-top: 0.12rem
-			margin-left: 0.2rem
-			background: #fff
-			color: #ccc
-			padding-left: 0.2rem
-		.header-right 
-			width: 1.24rem
-			float: right
+.header
+	display: flex
+	line-height: 0.86rem
+	background: $bgColor
+	color: #fff
+	.header-left
+		width: 0.64rem
+		float: left
+		.back-icon
 			text-align: center
-			.iconfont
-				font-size: 0.24rem
+	.header-input
+		flex: 1
+		height: 0.64rem
+		line-height: 0.64rem
+		margin-top: 0.12rem
+		margin-left: 0.2rem
+		background: #fff
+		color: #ccc
+		padding-left: 0.2rem
+	.header-right 
+		width: 1.24rem
+		float: right
+		text-align: center
+		.iconfont
+			font-size: 0.24rem
 </style>
