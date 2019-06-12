@@ -72,8 +72,8 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-@import '~styles/varibles.styl' // @表示src目录，在css中使用@前面需要加~线
-@import '~styles/mixins.styl'
+@import '~styles/varibles.styl'; // @表示src目录，在css中使用@前面需要加~线
+@import '~styles/mixins.styl';
 .icons >>> .swiper-container
   width: 100%
   height: 0
