@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of list"
+        v-for="item of weekendList"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -21,25 +21,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      list: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg',
-        title: '上海迪士尼乐园',
-        desc: '上海迪士尼乐园上海迪士尼乐园上海迪士尼乐园上海迪士尼乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1603/ad/69b0fc5f48ad5f.jpg_r_640x214_b0fd5c7b.jpg',
-        title: '上海野生动物园',
-        desc: '上海野生动物园上海野生动物园上海野生动物园'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg',
-        title: '上海迪士尼乐园',
-        desc: '上海野生动物园上海野生动物园上海野生动物园'
-      }]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>

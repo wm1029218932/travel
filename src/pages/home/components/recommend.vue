@@ -20,23 +20,11 @@ export default {
   name: 'HomeRecommend',
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
-        title: '上海迪士尼乐园',
-        desc: '上海迪士尼乐园上海迪士尼乐园上海迪士尼乐园上海迪士尼乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1904/d5/d579b03a110d75a8a3.img.jpg_200x200_740bd4c0.jpg',
-        title: '上海野生动物园',
-        desc: '上海野生动物园上海野生动物园上海野生动物园'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1904/6e/6edffb73a665bc70a3.img.jpg_200x200_0e892907.jpg',
-        title: '上海迪士尼乐园',
-        desc: '上海野生动物园上海野生动物园上海野生动物园'
-      }]
+      
     }
+  },
+  props: {
+    recommendList: Array
   }
 }
 </script>
@@ -44,7 +32,6 @@ export default {
 @import '~styles/varibles.styl'
 @import '~styles/mixins.styl'
   .recommend-title
-    margin-top: .2rem
     line-height: .8rem
     background: #eee
     text-indent: .2rem
